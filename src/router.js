@@ -51,17 +51,17 @@ export const RouteWithSubRoutes = (route) => {
           />
         </>
       ) : (
-        <>
+          <>
             <TopMenu />
-          <Route
-            path={route.path}
-            render={(props) => (
-              // pass the sub-routes down to keep nesting
-              <route.component {...props} routes={route.routes} />
-            )}
-          />
-        </>
-      )}
+            <Route
+              path={route.path}
+              render={(props) => (
+                // pass the sub-routes down to keep nesting
+                <route.component {...props} routes={route.routes} />
+              )}
+            />
+          </>
+        )}
     </>
   );
 };

@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const ComponentLayout2Column = (props) => {
-    const classes = useStyles();
+  const classes = useStyles();
   return (
     <>
       <Grid container spacing={3}>
@@ -34,7 +34,7 @@ export const ComponentLayout2Column = (props) => {
 
 
 export const RootLayout = () => {
-    return (
-        <></>
-    )
+  return (
+    <></>
+  )
 }
